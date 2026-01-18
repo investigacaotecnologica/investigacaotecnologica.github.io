@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Investigação Criminal Tecnológica — conteúdo em vídeo." />
+  <meta name="theme-color" content="#060a0f" />
+
+  <title>Investigação Criminal Tecnológica</title>
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Fundo animado -->
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header class="header">
+      <div class="badge" aria-hidden="true">ICT</div>
+      <h1>Investigação Criminal Tecnológica</h1>
+      <p class="subtitle">Um único vídeo, em uma página leve, pronta para GitHub Pages.</p>
+    </header>
+
+    <main class="main">
+      <section class="card" aria-label="Vídeo principal">
+        <div class="card-top">
+          <div class="dot dot-cyan" aria-hidden="true"></div>
+          <div class="dot dot-magenta" aria-hidden="true"></div>
+          <div class="dot dot-lime" aria-hidden="true"></div>
+          <div class="card-title">/video/ict</div>
+        </div>
+
+        <div class="video-shell">
+          <video
+            class="video"
+            src="assets/video/cyber.mp4"
+            controls
+            playsinline
+            preload="metadata"
+          >
+            Seu navegador não suporta vídeo em HTML5. Você pode baixar o arquivo em <a href="assets/video/cyber.mp4">cyber.mp4</a>.
+          </video>
+        </div>
+
+        <div class="hint" role="note">
+          Dica: se quiser autoplay, deixe o vídeo <strong>muted</strong>. Alguns navegadores bloqueiam autoplay com áudio.
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> • Investigação Criminal Tecnológica</span>
+      <span class="sep" aria-hidden="true">•</span>
+      <a class="footer-link" href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>
+    </footer>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
